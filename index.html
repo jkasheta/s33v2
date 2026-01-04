@@ -1,20 +1,18 @@
-<!-- force deploy -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SECTOR THIRTY THREE - MOBILE TERMINAL</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- redeploy-trigger: 2026-01-03T23:45:00Z -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SECTOR THIRTY THREE - MOBILE TERMINAL</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- redeploy-trigger: 2026-01-04T00:00:00Z -->
 </head>
 <body>
-    <div class="phone-frame">
-        <div class="phone-content">
-            <img src="/s33-logo.png" alt="S33" class="logo">
-            <div id="terminal" class="terminal"></div>
-        </div>
-    </div>
-    <script src="script.js"></script>
+  <div class="terminal-container">
+    <!-- logo is intentionally present but hidden to preserve spacing -->
+    <img src="/s33-logo.png" alt="S33" class="logo" aria-hidden="true">
+    <div id="terminal" class="terminal" role="status" aria-live="polite"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
