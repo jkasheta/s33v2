@@ -6,7 +6,7 @@
 }
 
 body {
-    /* Full-screen black background */
+    /* Full-screen flat black background - no gradients or glows */
     background-color: #000000;
     font-family: 'Courier New', Courier, monospace;
     color: #00ff00; /* Neon green text */
@@ -28,15 +28,23 @@ body {
     align-items: center;
 }
 
-/* Terminal Block */
+/* Terminal Block - Simple flat black with thin green border only */
 .terminal {
     width: 100%;
     background-color: #000000;
-    border: 1px solid #00ff00; /* Subtle green border */
+    border: 1px solid #00ff00; /* Single subtle green border - no glow, no shadows */
     padding: 1.5rem;
     overflow-y: auto;
     overflow-x: hidden;
     max-height: 90vh;
+    box-shadow: none; /* Explicitly no shadow */
+}
+
+/* Logo Spacer - Hidden logo but preserves vertical spacing */
+.logo-spacer {
+    height: 40px; /* Preserve space where logo would be */
+    margin-bottom: 1rem;
+    visibility: hidden; /* Hidden but maintains layout space */
 }
 
 /* Terminal Content */
@@ -52,6 +60,13 @@ body {
 .terminal * {
     font-family: 'Courier New', Courier, monospace;
     color: #00ff00;
+}
+
+/* Separator line styling (replaces stray "W") */
+.separator {
+    border-top: 1px solid #00ff00;
+    margin: 0.5rem 0;
+    width: 100%;
 }
 
 /* Input fields in terminal (if any) */
@@ -74,7 +89,7 @@ button:hover {
     background-color: #001a00;
 }
 
-/* Responsive Design */
+/* Responsive Design - Readable on mobile, not huge on desktop */
 @media (max-width: 768px) {
     .terminal-container {
         max-width: 100%;
@@ -89,6 +104,10 @@ button:hover {
     #terminal-content {
         font-size: 0.9rem;
         line-height: 1.5;
+    }
+    
+    .logo-spacer {
+        height: 30px; /* Slightly smaller on mobile */
     }
 }
 
@@ -105,6 +124,10 @@ button:hover {
     #terminal-content {
         font-size: 0.85rem;
         line-height: 1.4;
+    }
+    
+    .logo-spacer {
+        height: 25px; /* Even smaller on small phones */
     }
 }
 
