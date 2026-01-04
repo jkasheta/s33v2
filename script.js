@@ -9,7 +9,7 @@ let terminalElement;
 const bootSequence = [
     'SECTOR THIRTY THREE - MOBILE TERMINAL',
     '========================================',
-    '====================ELCOME TO S33 NETWORK',
+    'WELCOME TO S33 NETWORK',
     'ESTABLISHING SECURE CONNECTION...',
     'LOADING S33 PROTOCOLS...',
     'ACCESS GRANTED. ',
