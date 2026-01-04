@@ -28,16 +28,18 @@ body {
     align-items: center;
 }
 
-/* Terminal Block - Simple flat black with thin green border only */
+/* Terminal Block - Simple flat black with thin green border only - NO PHONE FRAME, NO GLOW */
 .terminal {
     width: 100%;
     background-color: #000000;
-    border: 1px solid #00ff00; /* Single subtle green border - no glow, no shadows */
+    border: 1px solid #00ff00; /* Single subtle green border - no glow, no shadows, no rounded corners */
+    border-radius: 0; /* Explicitly no rounded corners */
     padding: 1.5rem;
     overflow-y: auto;
     overflow-x: hidden;
     max-height: 90vh;
     box-shadow: none; /* Explicitly no shadow */
+    outline: none; /* No outline glow */
 }
 
 /* Logo Spacer - Hidden logo but preserves vertical spacing */
@@ -60,6 +62,38 @@ body {
 .terminal * {
     font-family: 'Courier New', Courier, monospace;
     color: #00ff00;
+}
+
+/* Terminal header styling */
+.terminal-header {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Separator line - replaces stray "W" */
+.separator-line {
+    margin: 0.5rem 0;
+    letter-spacing: -0.05em;
+}
+
+/* Boot text styling */
+.boot-text {
+    margin: 0.25rem 0;
+}
+
+/* Blank line after ACCESS GRANTED */
+.blank-line {
+    line-height: 1.6;
+}
+
+/* Menu items */
+.menu-item {
+    margin: 0.25rem 0;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: #001a00;
 }
 
 /* Separator line styling (replaces stray "W") */
