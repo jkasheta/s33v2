@@ -12,7 +12,7 @@ const bootSequence = [
     'WELCOME TO S33 NETWORK',
     'ESTABLISHING SECURE CONNECTION...',
     'LOADING S33 PROTOCOLS...',
-    'ACCESS GRANTED.',
+    'ACCESS GRANTED. ',
     '',
     '',
     ''
