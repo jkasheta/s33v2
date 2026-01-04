@@ -14,6 +14,7 @@ const bootSequence = [
     'LOADING S33 PROTOCOLS...',
     'ACCESS GRANTED.',
     '',
+    '',
     ''
 ];
 
