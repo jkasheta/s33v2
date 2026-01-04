@@ -69,7 +69,6 @@ body {
 input[type="password"] {
     background: transparent;
     border: none;
-    border-bottom: 1px solid #00ff00;
     color: #00ff00;
     font-family: 'Courier New', monospace;
     font-size: 13px;
