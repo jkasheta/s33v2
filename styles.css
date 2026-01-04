@@ -98,3 +98,23 @@ input[type="password"]::placeholder {
 .terminal-container::-webkit-scrollbar-thumb:hover {
     background: #00cc00;
 }
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #003300;
+}
+
+.github-link {
+    color: #006600;
+    text-decoration: none;
+    font-size: 11px;
+    font-family: 'Courier New', monospace;
+    transition: color 0.2s;
+    letter-spacing: 1px;
+}
+
+.github-link:hover {
+    color: #00ff00;
+}
