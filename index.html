@@ -1,36 +1,20 @@
+<!-- force deploy -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="S33V2 - Terminal Interface">
-    <title>S33V2</title>
+    <title>SECTOR THIRTY THREE - MOBILE TERMINAL</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- redeploy-trigger: 2026-01-03T23:45:00Z -->
 </head>
 <body>
-    <div class="terminal-container">
-        <div class="terminal">
-            <!-- Logo hidden but spacing preserved -->
-            <!-- <img src="logo.png" alt="Logo" style="display: none;"> -->
-            <div class="logo-spacer"></div>
-            
-            <div id="terminal-content">
-                <div class="terminal-header">SECTOR THIRTY THREE - MOBILE TERMINAL</div>
-                <div class="separator-line">========================================</div>
-                <div class="boot-text">INITIALIZING SYSTEM...</div>
-                <div class="boot-text">LOADING MODULES...</div>
-                <div class="boot-text">ACCESS GRANTED.</div>
-                <div class="blank-line"><br></div>
-                <div class="menu-item">[1] MISSION BRIEF</div>
-                <div class="menu-item">[2] INTEL DATABASE</div>
-                <div class="menu-item">[3] SYSTEM STATUS</div>
-                <div class="menu-item">[4] EXIT</div>
-                <!-- Additional terminal content will be populated by script.js -->
-                <!-- Boot sequence, typing behavior, menu, and INTEL password logic handled in JS -->
-            </div>
+    <div class="phone-frame">
+        <div class="phone-content">
+            <img src="/s33-logo.png" alt="S33" class="logo">
+            <div id="terminal" class="terminal"></div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
